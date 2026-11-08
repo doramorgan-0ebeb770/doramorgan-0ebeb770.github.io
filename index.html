@@ -1,0 +1,1023 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>91免费观看-免费影视资源_在线观看平台_片单推荐</title>
+<meta name="description" content="91免费观看提供免费影视资源在线观看，涵盖电影、剧集、综艺、动漫与纪录片，按类型和场景整理片单，适合想省时间找片、通勤与睡前观看的用户参考。">
+<meta name="keywords" content="免费影视资源,在线观看片单,电影剧集分类,追剧推荐,观影场景指南">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1f2e'/%3E%3Cpath d='M20 18h24v6H26v6h14v6H26v6h18v6H20z' fill='%23ff6a3d'/%3E%3C/svg%3E">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+:root{
+  --bg:#f5f6fa;
+  --panel:#ffffff;
+  --ink:#1a1f2e;
+  --ink-2:#3c4356;
+  --muted:#6b7386;
+  --line:#e3e6ee;
+  --brand:#ff6a3d;
+  --brand-dark:#e5522a;
+  --brand-soft:#fff1eb;
+  --accent:#2f5fe0;
+  --accent-soft:#eef2ff;
+  --gold:#c99a2e;
+  --radius:14px;
+  --radius-sm:8px;
+  --shadow:0 2px 10px rgba(26,31,46,.06);
+  --shadow-lg:0 10px 30px rgba(26,31,46,.10);
+  --announce-h:38px;
+  --header-h:66px;
+  --font:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","Source Han Sans SC",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:var(--font);background:var(--bg);color:var(--ink);
+  line-height:1.75;font-size:15px;-webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+p{margin:0 0 10px}
+ul,ol{margin:0 0 10px;padding-left:20px}
+li{margin-bottom:4px}
+section{scroll-margin-top:calc(var(--announce-h) + var(--header-h) + 12px)}
+
+/* ========== 公告条 + 页头吸顶 ========== */
+.sticky-top{position:sticky;top:0;z-index:60}
+.announce{
+  height:var(--announce-h);background:linear-gradient(90deg,#1a1f2e,#2b3450 55%,#3a2a52);
+  color:#f2f4ff;font-size:13px;display:flex;align-items:center;
+}
+.announce .wrap{display:flex;align-items:center;gap:10px;width:100%}
+.announce .dot{width:6px;height:6px;border-radius:50%;background:var(--brand);flex:0 0 auto;box-shadow:0 0 0 3px rgba(255,106,61,.25)}
+.announce .txt{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1}
+.announce .txt b{color:#ffb59c;font-weight:600}
+.announce .link{color:#ffd9cc;border-bottom:1px dashed rgba(255,217,204,.5);flex:0 0 auto;font-size:12px}
+
+.header{
+  background:rgba(255,255,255,.96);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);box-shadow:var(--shadow);
+}
+.header .wrap{display:flex;align-items:center;gap:18px;height:var(--header-h)}
+.brand{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.brand .logo{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,#1a1f2e,#333c58);display:grid;place-items:center;box-shadow:0 4px 12px rgba(26,31,46,.22)}
+.brand .logo svg{width:22px;height:22px}
+.brand .name{font-size:19px;font-weight:800;letter-spacing:.5px;color:var(--ink);white-space:nowrap}
+.head-nav{display:flex;gap:4px;flex:1;overflow:hidden}
+.head-nav a{padding:6px 11px;border-radius:20px;font-size:14px;color:var(--ink-2);white-space:nowrap;transition:.18s}
+.head-nav a:hover{background:var(--brand-soft);color:var(--brand-dark)}
+.head-nav a.on{background:var(--brand);color:#fff}
+.head-actions{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.search-box{position:relative;display:flex;align-items:center}
+.search-box input{
+  width:190px;height:36px;border:1px solid var(--line);border-radius:20px;
+  padding:0 34px 0 14px;font-size:13px;background:#f7f8fc;color:var(--ink);outline:none;transition:.2s;
+}
+.search-box input:focus{border-color:var(--brand);background:#fff;box-shadow:0 0 0 3px rgba(255,106,61,.14)}
+.search-box .sbtn{position:absolute;right:4px;width:28px;height:28px;border:0;background:transparent;cursor:pointer;border-radius:50%;display:grid;place-items:center;color:var(--muted)}
+.search-box .sbtn:hover{background:var(--brand-soft);color:var(--brand-dark)}
+.search-box .sbtn svg{width:15px;height:15px}
+.search-feedback{display:none;position:absolute;top:42px;right:0;left:auto;min-width:230px;max-width:300px;background:#fff;border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow-lg);padding:8px 12px;font-size:12.5px;color:var(--muted);z-index:70}
+.search-feedback.show{display:block}
+.quick-btn{
+  display:inline-flex;align-items:center;gap:5px;height:36px;padding:0 14px;border-radius:20px;
+  background:var(--brand);color:#fff;font-size:13.5px;font-weight:600;border:0;cursor:pointer;transition:.18s;
+}
+.quick-btn:hover{background:var(--brand-dark)}
+.menu-toggle{display:none;width:38px;height:38px;border:1px solid var(--line);background:#fff;border-radius:10px;cursor:pointer;place-items:center;color:var(--ink)}
+.menu-toggle svg{width:18px;height:18px}
+
+.wrap{width:100%;max-width:1320px;margin:0 auto;padding:0 20px}
+
+/* ========== 首屏 ========== */
+.hero{
+  background:linear-gradient(120deg,#151a28 0%,#232b45 46%,#3a2352 100%);
+  color:#fff;position:relative;overflow:hidden;
+}
+.hero::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(680px 300px at 82% 18%,rgba(255,106,61,.30),transparent 68%),
+    radial-gradient(520px 260px at 12% 90%,rgba(47,95,224,.34),transparent 70%);
+}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:34px;padding-top:42px;padding-bottom:46px;align-items:center}
+.hero-badge{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.18);padding:4px 12px;border-radius:20px;font-size:12.5px;color:#ffd9cc;margin-bottom:14px}
+.hero-badge i{width:6px;height:6px;border-radius:50%;background:#ff8a63;display:inline-block}
+.hero h1{font-size:34px;letter-spacing:1px;margin-bottom:12px;font-weight:800}
+.hero h1 span{color:#ff8a63}
+.hero .lead{font-size:14.5px;line-height:1.85;color:#cfd5e8;max-width:520px;margin-bottom:18px}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.hero-tags span{font-size:12.5px;padding:4px 11px;border-radius:16px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.14);color:#e6eaff}
+.hero-cta{display:flex;flex-wrap:wrap;gap:10px}
+.btn-main{display:inline-flex;align-items:center;gap:7px;background:var(--brand);color:#fff;padding:10px 20px;border-radius:24px;font-weight:700;font-size:14px;transition:.18s;box-shadow:0 6px 18px rgba(255,106,61,.35)}
+.btn-main:hover{background:var(--brand-dark);transform:translateY(-1px)}
+.btn-ghost{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.24);color:#fff;padding:10px 20px;border-radius:24px;font-weight:600;font-size:14px;transition:.18s}
+.btn-ghost:hover{background:rgba(255,255,255,.16)}
+.hero-visual{position:relative;height:290px}
+.hero-visual svg{width:100%;height:100%}
+
+/* ========== 三栏布局 ========== */
+.layout{display:grid;grid-template-columns:176px minmax(0,1fr) 246px;gap:22px;padding:26px 0 10px;align-items:start}
+.col-left,.col-right{position:sticky;top:calc(var(--announce-h) + var(--header-h) + 14px);align-self:start}
+.side-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:14px;box-shadow:var(--shadow);margin-bottom:16px}
+.side-title{font-size:13px;font-weight:800;letter-spacing:.5px;color:var(--ink);display:flex;align-items:center;gap:7px;margin-bottom:10px}
+.side-title::before{content:"";width:3px;height:13px;border-radius:2px;background:var(--brand)}
+.chan-list{list-style:none;padding:0;margin:0}
+.chan-list li{margin-bottom:2px}
+.chan-list a{display:flex;align-items:center;justify-content:space-between;gap:6px;padding:6px 9px;border-radius:var(--radius-sm);font-size:13px;color:var(--ink-2);transition:.15s}
+.chan-list a:hover{background:var(--brand-soft);color:var(--brand-dark)}
+.chan-list a em{font-style:normal;font-size:11px;color:var(--muted);background:#f1f3f9;border-radius:8px;padding:0 6px;line-height:17px}
+.chan-list a:hover em{background:#fff;color:var(--brand-dark)}
+.tag-cloud{display:flex;flex-wrap:wrap;gap:6px}
+.tag-cloud a,.tag-cloud button{font-size:12px;padding:3px 9px;border-radius:14px;background:#f3f5fa;color:var(--ink-2);border:1px solid transparent;cursor:pointer;transition:.15s}
+.tag-cloud a:hover,.tag-cloud button:hover{background:var(--brand-soft);color:var(--brand-dark);border-color:#ffd6c6}
+.tag-cloud button.on{background:var(--brand);color:#fff;border-color:var(--brand)}
+
+/* 中栏 */
+.col-main{min-width:0}
+.block{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px 24px;margin-bottom:20px}
+.block-title{font-size:19px;font-weight:800;display:flex;align-items:center;gap:10px;margin-bottom:4px}
+.block-title::before{content:"";width:4px;height:18px;border-radius:2px;background:linear-gradient(180deg,var(--brand),#ffb08f)}
+.block-sub{font-size:13px;color:var(--muted);margin-bottom:16px}
+.prose p{color:var(--ink-2);margin-bottom:12px}
+.prose h3{font-size:16px;margin:18px 0 8px;color:var(--ink);display:flex;align-items:center;gap:8px}
+.prose h3::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--brand)}
+.prose ul li{color:var(--ink-2);font-size:14.5px}
+.hl{color:var(--brand-dark);font-weight:700}
+
+/* 卡片网格 */
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;transition:.2s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:#ffd0bf}
+.card .thumb{height:82px;position:relative;display:grid;place-items:center;color:#fff;font-weight:800;font-size:13px;letter-spacing:1px;overflow:hidden}
+.card .thumb.t1{background:linear-gradient(120deg,#2b3450,#4a3a6b)}
+.card .thumb.t2{background:linear-gradient(120deg,#7a3a2e,#c05a3a)}
+.card .thumb.t3{background:linear-gradient(120deg,#20465c,#2f7a86)}
+.card .thumb.t4{background:linear-gradient(120deg,#4a3a2b,#8a6a3b)}
+.card .thumb.t5{background:linear-gradient(120deg,#3c2b52,#6b4a8a)}
+.card .thumb.t6{background:linear-gradient(120deg,#2a4a3a,#4a8a6b)}
+.card .thumb svg{position:absolute;inset:0;width:100%;height:100%;opacity:.22}
+.card .thumb span{position:relative;z-index:2}
+.card .cbody{padding:11px 12px 13px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card h3{font-size:14.5px;line-height:1.4}
+.card .tags{display:flex;flex-wrap:wrap;gap:5px}
+.card .tags i{font-style:normal;font-size:11px;padding:1px 7px;border-radius:10px;background:#f2f4fa;color:var(--muted)}
+.card .desc{font-size:12.5px;color:var(--muted);line-height:1.65;flex:1}
+.card .meta{display:flex;justify-content:space-between;font-size:11.5px;color:#9aa1b3;border-top:1px dashed var(--line);padding-top:7px}
+.card .meta b{color:var(--brand-dark);font-weight:700}
+
+/* 更新列表 */
+.upd-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.upd-list li{border:1px solid var(--line);border-radius:10px;padding:9px 12px;background:#fcfdff;transition:.15s}
+.upd-list li:hover{border-color:#ffd0bf;background:#fff8f5}
+.upd-list .u-title{font-size:13.5px;font-weight:700;display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.upd-list .u-title em{font-style:normal;font-size:11px;font-weight:500;color:var(--brand-dark);background:var(--brand-soft);padding:0 6px;border-radius:8px;flex:0 0 auto}
+.upd-list .u-desc{font-size:12px;color:var(--muted);margin-top:2px;line-height:1.6}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.cat-item{display:flex;flex-direction:column;gap:3px;padding:11px 12px;border-radius:10px;border:1px solid var(--line);background:linear-gradient(160deg,#fff,#f8f9fd);transition:.18s}
+.cat-item:hover{border-color:var(--brand);background:var(--brand-soft)}
+.cat-item b{font-size:13.5px;color:var(--ink)}
+.cat-item span{font-size:11.5px;color:var(--muted)}
+
+/* 对照面板 */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}
+.compare .panel{border:1px solid var(--line);border-radius:12px;padding:13px 15px;background:#fbfcff}
+.compare .panel h4{font-size:14px;margin-bottom:6px;color:var(--ink);display:flex;align-items:center;gap:6px}
+.compare .panel h4 b{width:18px;height:18px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-size:11px;display:grid;place-items:center}
+.compare .panel.alt{background:#fff7f3;border-color:#ffdccd}
+.compare .panel.alt h4 b{background:#ffe6dc;color:var(--brand-dark)}
+.compare .panel p{font-size:13px;color:var(--ink-2);margin:0}
+
+/* 步骤 */
+.steps{list-style:none;padding:0;margin:0;counter-reset:st}
+.steps li{counter-increment:st;position:relative;padding:10px 0 10px 40px;border-bottom:1px dashed var(--line);font-size:14px;color:var(--ink-2)}
+.steps li:last-child{border-bottom:0}
+.steps li::before{content:counter(st);position:absolute;left:0;top:9px;width:26px;height:26px;border-radius:50%;background:var(--brand);color:#fff;font-size:12.5px;font-weight:700;display:grid;place-items:center}
+.steps li b{color:var(--ink)}
+
+/* FAQ */
+.faq-item{border:1px solid var(--line);border-radius:10px;margin-bottom:9px;background:#fcfdff;overflow:hidden}
+.faq-item summary{cursor:pointer;padding:11px 14px;font-size:14px;font-weight:600;color:var(--ink);list-style:none;display:flex;justify-content:space-between;gap:10px;align-items:center}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";font-size:17px;color:var(--brand);font-weight:700;line-height:1}
+.faq-item[open]{background:#fff;border-color:#ffd0bf}
+.faq-item[open] summary::after{content:"−"}
+.faq-item .ans{padding:0 14px 12px;font-size:13.5px;color:var(--ink-2);line-height:1.8}
+
+/* 评论 */
+.cmt-list{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.cmt{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:#fcfdff}
+.cmt .who{display:flex;align-items:center;gap:7px;margin-bottom:4px}
+.cmt .av{width:22px;height:22px;border-radius:50%;background:linear-gradient(135deg,#ffb08f,#ff6a3d);color:#fff;font-size:11px;font-weight:700;display:grid;place-items:center;flex:0 0 auto}
+.cmt .who b{font-size:12.5px;color:var(--ink)}
+.cmt .who time{font-size:11px;color:#9aa1b3;margin-left:auto}
+.cmt p{font-size:12.8px;color:var(--ink-2);margin:0;line-height:1.7}
+
+/* 资讯 */
+.news-list{display:flex;flex-direction:column;gap:11px}
+.news{border-left:3px solid var(--accent);padding:2px 0 2px 12px}
+.news h4{font-size:14px;margin-bottom:2px}
+.news .nd{font-size:11.5px;color:#9aa1b3;margin-bottom:2px}
+.news p{font-size:12.8px;color:var(--muted);margin:0}
+
+/* 相关推荐 */
+.rel-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.rel{display:flex;align-items:center;gap:9px;border:1px solid var(--line);border-radius:9px;padding:8px 10px;background:#fcfdff;transition:.15s}
+.rel:hover{border-color:#ffd0bf;background:#fff8f5}
+.rel .rk{width:22px;height:22px;border-radius:6px;background:var(--accent-soft);color:var(--accent);font-size:11.5px;font-weight:700;display:grid;place-items:center;flex:0 0 auto}
+.rel .rt{font-size:13px;font-weight:600;color:var(--ink);line-height:1.35}
+.rel .rt span{display:block;font-size:11px;font-weight:400;color:var(--muted)}
+
+/* 时间线 */
+.timeline{position:relative;padding-left:20px;margin:0;list-style:none}
+.timeline::before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:2px;background:linear-gradient(180deg,var(--brand),#ffd9cc)}
+.timeline li{position:relative;padding:0 0 14px 6px;font-size:13.5px;color:var(--ink-2)}
+.timeline li::before{content:"";position:absolute;left:-19px;top:7px;width:9px;height:9px;border-radius:50%;background:#fff;border:2px solid var(--brand)}
+.timeline li b{color:var(--ink)}
+
+/* 右栏 */
+.toc{list-style:none;padding:0;margin:0;font-size:13px}
+.toc li{margin-bottom:1px}
+.toc a{display:block;padding:4px 8px;border-radius:6px;color:var(--ink-2);border-left:2px solid transparent;transition:.15s}
+.toc a:hover{background:var(--brand-soft);color:var(--brand-dark);border-left-color:var(--brand)}
+.hot-list{list-style:none;padding:0;margin:0;counter-reset:hot}
+.hot-list li{counter-increment:hot;display:flex;gap:9px;padding:7px 0;border-bottom:1px dashed var(--line);font-size:13px;align-items:flex-start}
+.hot-list li:last-child{border-bottom:0}
+.hot-list li::before{content:counter(hot);flex:0 0 auto;width:18px;height:18px;border-radius:5px;background:#f1f3f9;color:var(--muted);font-size:11px;font-weight:700;display:grid;place-items:center;margin-top:2px}
+.hot-list li:nth-child(-n+3)::before{background:var(--brand);color:#fff}
+.hot-list a{color:var(--ink-2);line-height:1.5}
+.hot-list a:hover{color:var(--brand-dark)}
+.hot-list small{display:block;color:#9aa1b3;font-size:11px}
+.ext-list{list-style:none;padding:0;margin:0;font-size:13px}
+.ext-list li{padding:6px 0;border-bottom:1px dashed var(--line)}
+.ext-list li:last-child{border-bottom:0}
+.ext-list a{color:var(--ink-2)}
+.ext-list a:hover{color:var(--brand-dark)}
+.ext-list span{color:#9aa1b3;font-size:11px}
+
+/* 页尾 */
+.footer{background:#151a28;color:#b9c0d4;margin-top:26px;padding:34px 0 20px;font-size:13px}
+.footer .fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:26px;margin-bottom:24px}
+.footer .f-brand{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.footer .f-brand .logo{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,#2b3450,#4a3a6b);display:grid;place-items:center}
+.footer .f-brand .logo svg{width:19px;height:19px}
+.footer .f-brand b{color:#fff;font-size:17px;letter-spacing:.5px}
+.footer p{color:#8b93a8;line-height:1.8;margin:0 0 8px}
+.footer h4{color:#fff;font-size:13.5px;margin-bottom:10px}
+.footer ul{list-style:none;padding:0;margin:0}
+.footer ul li{margin-bottom:6px}
+.footer ul a{color:#b9c0d4}
+.footer ul a:hover{color:#ffb59c}
+.footer .fbottom{border-top:1px solid rgba(255,255,255,.09);padding-top:14px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-size:12px;color:#7d859a}
+.notice-line{color:#7d859a;font-size:11.5px;margin-top:6px}
+
+/* 搜索结果高亮 */
+[data-searchable].dim{display:none!important}
+
+/* 响应式 */
+@media (max-width:1180px){
+  .layout{grid-template-columns:160px minmax(0,1fr) 220px;gap:16px}
+  .card-grid{grid-template-columns:repeat(2,1fr)}
+  .hero .wrap{grid-template-columns:1fr;gap:18px}
+  .hero-visual{height:200px;order:-1}
+  .hero h1{font-size:30px}
+}
+@media (max-width:960px){
+  :root{--announce-h:34px;--header-h:60px}
+  .layout{grid-template-columns:1fr;padding-top:18px}
+  .col-left,.col-right{position:static;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .col-left .side-card,.col-right .side-card{margin-bottom:0}
+  .col-right{order:3}
+  .col-left{order:-1;grid-template-columns:1fr}
+  .col-left .side-card:first-child{padding-bottom:10px}
+  .chan-list{display:flex;flex-wrap:wrap;gap:4px}
+  .chan-list li{flex:0 0 auto;margin:0}
+  .chan-list a{padding:5px 10px;border:1px solid var(--line);background:#fff}
+  .head-nav{display:none}
+  .menu-toggle{display:grid}
+  .head-nav.open{display:flex;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;padding:10px 16px;border-bottom:1px solid var(--line);box-shadow:var(--shadow-lg);z-index:80;gap:2px}
+  .head-nav.open a{padding:9px 12px;border-radius:8px}
+  .search-box input{width:150px}
+  .quick-btn{display:none}
+}
+@media (max-width:720px){
+  .wrap{padding:0 14px}
+  .hero h1{font-size:25px}
+  .hero .lead{font-size:13.5px}
+  .hero .wrap{padding-top:28px;padding-bottom:30px}
+  .block{padding:17px 15px;border-radius:12px}
+  .block-title{font-size:17px}
+  .card-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .card .thumb{height:66px;font-size:12px}
+  .cat-grid{grid-template-columns:1fr 1fr}
+  .upd-list{grid-template-columns:1fr}
+  .cmt-list{grid-template-columns:1fr}
+  .rel-grid{grid-template-columns:1fr}
+  .compare{grid-template-columns:1fr}
+  .col-left,.col-right{grid-template-columns:1fr}
+  .footer .fgrid{grid-template-columns:1fr 1fr;gap:18px}
+  .prose h3{font-size:15px}
+}
+@media (max-width:420px){
+  .brand .name{font-size:16px}
+  .brand .logo{width:32px;height:32px}
+  .search-box input{width:118px;font-size:12px}
+  .card-grid{grid-template-columns:1fr}
+  .hero-tags span{font-size:11.5px}
+  .hero-cta .btn-main,.hero-cta .btn-ghost{padding:9px 15px;font-size:13px}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== 吸顶公告条 + 页头 ===== -->
+<div class="sticky-top">
+  <div class="announce" role="region" aria-label="站内公告">
+    <div class="wrap">
+      <i class="dot" aria-hidden="true"></i>
+      <div class="txt"><b>本周上新</b> · 都市情感剧《晚风知我意》全集免费观看，另更新 12 部悬疑短剧与 3 部纪录片。</div>
+      <a class="link" href="/#latest">查看更新</a>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="wrap">
+      <a class="brand" href="/#top" aria-label="91免费观看 首页">
+        <span class="logo" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="12" width="56" height="34" rx="6" stroke="#ff8a63" stroke-width="4"/>
+            <path d="M26 22l14 7-14 7V22z" fill="#ff6a3d"/>
+            <rect x="20" y="52" width="24" height="4" rx="2" fill="#ff8a63"/>
+          </svg>
+        </span>
+        <span class="name">91免费观看</span>
+      </a>
+
+      <nav class="head-nav" id="headNav" aria-label="主题频道导航">
+        <a href="/#intro" class="on">平台介绍</a>
+        <a href="/#hot">热门片单</a>
+        <a href="/#latest">最新更新</a>
+        <a href="/#category">分类筛选</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">观影指南</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#comments">观众评论</a>
+        <a href="/#news">影视资讯</a>
+      </nav>
+
+      <div class="head-actions">
+        <div class="search-box">
+          <input type="search" id="siteSearch" placeholder="搜片名 / 类型 / 场景" aria-label="站内搜索">
+          <button class="sbtn" id="searchBtn" aria-label="搜索">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          </button>
+          <div class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></div>
+        </div>
+        <button class="quick-btn" type="button" onclick="document.getElementById('hot').scrollIntoView({behavior:'smooth'})">开始找片</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="展开导航菜单" aria-expanded="false" aria-controls="headNav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<!-- ===== 首屏 ===== -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-copy">
+      <div class="hero-badge"><i></i>免费影视资源 · 每日整理更新</div>
+      <h1>91免费观看</h1>
+      <p class="lead">把电影、剧集、综艺、动漫和纪录片按类型与观看场景整理成清晰片单，想找一部能立刻看的内容，从这里开始更省时间。</p>
+      <div class="hero-tags">
+        <span>都市情感剧</span>
+        <span>悬疑短剧</span>
+        <span>睡前轻松看</span>
+        <span>通勤追剧</span>
+        <span>高分纪录片</span>
+        <span>完结剧集</span>
+      </div>
+      <div class="hero-cta">
+        <a class="btn-main" href="/#hot">浏览热门片单
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn-ghost" href="/#category">按类型找片</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 420 300" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#ff6a3d"/><stop offset="1" stop-color="#ffb08f"/>
+          </linearGradient>
+          <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#2f5fe0"/><stop offset="1" stop-color="#6b8af0"/>
+          </linearGradient>
+        </defs>
+        <rect x="18" y="40" width="270" height="160" rx="14" fill="rgba(255,255,255,.07)" stroke="rgba(255,255,255,.22)"/>
+        <rect x="18" y="40" width="270" height="160" rx="14" fill="url(#g1)" opacity=".16"/>
+        <circle cx="66" cy="94" r="16" fill="url(#g1)"/>
+        <rect x="96" y="82" width="120" height="9" rx="4.5" fill="rgba(255,255,255,.55)"/>
+        <rect x="96" y="99" width="80" height="7" rx="3.5" fill="rgba(255,255,255,.3)"/>
+        <rect x="40" y="132" width="72" height="46" rx="8" fill="rgba(255,255,255,.14)"/>
+        <rect x="124" y="132" width="72" height="46" rx="8" fill="rgba(255,255,255,.14)"/>
+        <rect x="208" y="132" width="56" height="46" rx="8" fill="rgba(255,255,255,.14)"/>
+        <rect x="248" y="58" width="152" height="96" rx="12" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.22)"/>
+        <rect x="264" y="74" width="72" height="8" rx="4" fill="url(#g2)"/>
+        <rect x="264" y="90" width="110" height="7" rx="3.5" fill="rgba(255,255,255,.3)"/>
+        <rect x="264" y="106" width="90" height="7" rx="3.5" fill="rgba(255,255,255,.22)"/>
+        <rect x="264" y="126" width="52" height="16" rx="8" fill="url(#g1)"/>
+        <rect x="326" y="126" width="52" height="16" rx="8" fill="rgba(255,255,255,.16)"/>
+        <rect x="248" y="170" width="152" height="62" rx="12" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.16)"/>
+        <circle cx="272" cy="200" r="10" fill="rgba(255,255,255,.22)"/>
+        <rect x="292" y="192" width="82" height="7" rx="3.5" fill="rgba(255,255,255,.32)"/>
+        <rect x="292" y="206" width="60" height="6" rx="3" fill="rgba(255,255,255,.2)"/>
+        <circle cx="60" cy="248" r="5" fill="#ff8a63"/>
+        <circle cx="86" cy="248" r="5" fill="rgba(255,255,255,.3)"/>
+        <circle cx="112" cy="248" r="5" fill="rgba(255,255,255,.3)"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 三栏主体 ===== -->
+<div class="wrap layout">
+
+  <!-- 左栏 -->
+  <aside class="col-left" aria-label="频道与分类导航">
+    <div class="side-card">
+      <div class="side-title">频道导航</div>
+      <ul class="chan-list">
+        <li><a href="/#intro">平台介绍 <em>01</em></a></li>
+        <li><a href="/#hot">热门片单 <em>02</em></a></li>
+        <li><a href="/#latest">最新更新 <em>03</em></a></li>
+        <li><a href="/#category">分类筛选 <em>04</em></a></li>
+        <li><a href="/#deep">深度解析 <em>05</em></a></li>
+        <li><a href="/#guide">观影指南 <em>06</em></a></li>
+        <li><a href="/#faq">常见问答 <em>07</em></a></li>
+        <li><a href="/#comments">观众评论 <em>08</em></a></li>
+        <li><a href="/#news">影视资讯 <em>09</em></a></li>
+        <li><a href="/#related">相关推荐 <em>10</em></a></li>
+        <li><a href="/#timeline">更新节奏 <em>11</em></a></li>
+      </ul>
+    </div>
+    <div class="side-card">
+      <div class="side-title">类型标签</div>
+      <div class="tag-cloud" id="typeCloud">
+        <button type="button" class="on" data-type="all">全部</button>
+        <button type="button" data-type="movie">电影</button>
+        <button type="button" data-type="series">剧集</button>
+        <button type="button" data-type="variety">综艺</button>
+        <button type="button" data-type="anime">动漫</button>
+        <button type="button" data-type="doc">纪录片</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 中栏 -->
+  <main class="col-main" id="mainContent">
+
+    <!-- 01 平台介绍 -->
+    <section class="block" id="intro" data-block>
+      <h2 class="block-title">平台介绍：一个按类型与场景整理影视资源的地方</h2>
+      <p class="block-sub">从想看什么、什么时候看、看完之后看什么，三个问题出发组织内容。</p>
+      <div class="prose">
+        <p><strong>91免费观看</strong>是一个以免费影视资源为核心的在线观看整理站，把电影、剧集、综艺、动漫和纪录片按类型、更新状态与观看场景分组呈现。用户进入首页后，可以先从「热门片单」判断当下有哪些可看条目，再通过「分类筛选」缩小范围，最后用「观影指南」确认这部剧是否完结、适合什么时间看、下一部可以从哪接上。</p>
+        <p>站内内容围绕四条主线展开：<span class="hl">都市情感剧</span>与悬疑短剧构成剧集主力，电影以类型片和口碑片为主，纪录片偏向自然、人文与美食方向，综艺则集中在慢生活与竞技两类。每条内容配有类型标签、更新状态与一句看点，帮助访问者在十几秒内判断是否值得点开。</p>
+        <p>与单纯堆叠片名的列表不同，这里更强调「看前决策」：一部剧是周更还是已完结、单集时长是 25 分钟还是 45 分钟、适合通勤时碎片观看还是睡前连续追，这些信息会直接影响选择。为此，站内把更新节奏、单集时长、完结状态作为固定字段展示，减少点进去才发现不对味的情况。</p>
+        <p>对于刚开始使用免费影视资源的访问者，建议先从「最新更新」感受更新频率，再回到「热门片单」建立自己的待看列表。若时间有限，直接使用左栏类型标签筛选，比逐条浏览更高效。全部内容以静态页面呈现，关闭脚本后仍可正常阅读与跳转。</p>
+      </div>
+    </section>
+
+    <!-- 02 热门片单 -->
+    <section class="block" id="hot" data-block>
+      <h2 class="block-title">热门片单：本周值得点开的 9 部内容</h2>
+      <p class="block-sub">按类型标签与观看场景整理，卡片信息含更新状态与热度参考。</p>
+      <div class="card-grid" id="hotGrid">
+        <article class="card" data-type="series" data-searchable="晚风知我意 都市情感剧 完结 睡前看">
+          <div class="thumb t1"><svg viewBox="0 0 100 60" preserveAspectRatio="none"><circle cx="20" cy="18" r="12" fill="#fff"/><rect x="40" y="10" width="46" height="6" rx="3" fill="#fff"/><rect x="40" y="24" width="32" height="5" rx="2.5" fill="#fff"/></svg><span>都市情感</span></div>
+          <div class="cbody">
+            <h3>晚风知我意</h3>
+            <div class="tags"><i>都市情感剧</i><i>已完结</i><i>睡前看</i></div>
+            <p class="desc">两代人在旧城改造中的选择与和解，节奏平缓，适合睡前连看两集。</p>
+            <div class="meta"><span>全 32 集</span><b>热度 9.4</b></div>
+          </div>
+        </article>
+        <article class="card" data-type="series" data-searchable="雾港来信 悬疑短剧 周更 通勤追">
+          <div class="thumb t2"><svg viewBox="0 0 100 60" preserveAspectRatio="none"><rect x="12" y="14" width="30" height="34" rx="4" fill="#fff"/><rect x="52" y="20" width="36" height="5" rx="2.5" fill="#fff"/><rect x="52" y="32" width="24" height="5" rx="2.5" fill="#fff"/></svg><span>悬疑短剧</span></div>
+          <div class="cbody">
+            <h3>雾港来信</h3>
+            <div class="tags"><i>悬疑短剧</i><i>周更</i><i>通勤追</i></div>
+            <p class="desc">单集 22 分钟，一封信牵出港口旧案，每集结尾留钩子，适合通勤看。</p>
+            <div class="meta"><span>更新至 18 集</span><b>热度 9.1</b></div>
+          </div>
+        </article>
+        <article class="card" data-type="movie" data-searchable="长街短梦 类型片 口碑 周末看">
+          <div class="thumb t3"><svg viewBox="0 0 100 60" preserveAspectRatio="none"><rect x="14" y="10" width="72" height="40" rx="6" fill="#fff" opacity=".7"/><path d="M40 22l18 8-18 8V22z" fill="#fff"/></svg><span>口碑电影</span></div>
+          <div class="cbody">
+            <h3>长街短梦</h3>
+            <div class="tags"><i>城市剧情片</i><i>口碑片</i><i>周末看</i></div>
+            <p class="desc">一条老街、三家小店、四个夜晚，用固定机位拍出城市缓慢的变化。</p>
+            <div class="meta"><span>片长 108 分钟</span><b>评分 8.6</b></div>
+          </div>
+        </article>
+        <article class="card" data-type="doc" data-searchable="四季餐桌 美食纪录片 下饭看">
+          <div class="thumb t4"><svg viewBox="0 0 100 60" preserveAspectRatio="none"><circle cx="30" cy="30" r="14" fill="#fff" opacity=".8"/><rect x="52" y="18" width="34" height="5" rx="2.5" fill="#fff"/><rect x="52" y="30" width="24" height="5" rx="2.5" fill="#fff"/></svg><span>美食纪录</span></div>
+          <div class="cbody">
+            <h3>四季餐桌</h3>
+            <div class="tags"><i>美食纪录片</i><i>下饭看</i><i>已完结</i></div>
+            <p class="desc">跟着二十四节气走一遍南方菜市场，每集 30 分钟，配饭刚好。</p>
+            <div class="meta"><span>全 8 集</span><b>评分 9.0</b></div>
+          </div>
+        </article>
+        <article class="card" data-type="anime" data-searchable="纸飞机与夏天 治愈动漫 亲子看">
+          <div class="thumb t5"><svg viewBox="0 0 100 60" preserveAspectRatio="none"><path d="M20 40l20-16 20 16" stroke="#fff" stroke-width="5" fill="none"/><rect x="56" y="16" width="30" height="5" rx="2.5" fill="#fff"/><rect x="56" y="28" width="20" height="5" rx="2.5" fill="#fff"/></svg><span>治愈动漫</span></div>
+          <div class="cbody">
+            <h3>纸飞机与夏天</h3>
+            <div class="tags"><i>治愈动漫</i><i>亲子看</i><i>已完结</i></div>
+            <p class="desc">小镇少年与转学生的暑假，画风干净，适合家长和孩子一起看。</p>
+            <div class="meta"><span>全 12 集</span><b>评分 8.8</b></div>
+          </div>
+        </article>
+        <article class="card" data-type="variety" data-searchable="慢生活厨房 慢综艺 周末看">
+          <div class="thumb t6"><svg viewBox="0 0 100 60" preserveAspectRatio="none"><rect x="14" y="18" width="26" height="26" rx="5" fill="#fff" opacity=".8"/><rect x="50" y="16" width="36" height="5" rx="2.5" fill="#fff"/><rect x="50" y="28" width="26" height="5" rx="2.5" fill="#fff"/></svg><span>慢综艺</span></div>
+          <div class="cbody">
+            <h3>慢生活厨房</h3>
+            <div class="tags"><i>慢综艺</i><i>周末看</i><i>周更</i></div>
+            <p class="desc">四位常驻嘉宾轮流做一桌饭，没有淘汰环节，适合周末当背景音。</p>
+            <div class="meta"><span>更新至 9 期</span><b>热度 8.7</b></div>
+          </div>
+        </article>
+        <article class="card" data-type="series" data-searchable="回南天 家庭剧 已完结 连续追">
+          <div class="thumb t1"><svg viewBox="0 0 100 60" preserveAspectRatio="none"><rect x="16" y="14" width="24" height="32" rx="4" fill="#fff" opacity=".7"/><rect x="48" y="18" width="38" height="5" rx="2.5" fill="#fff"/><rect x="48" y="30" width="28" height="5" rx="2.5" fill="#fff"/></svg><span>家庭剧集</span></div>
+          <div class="cbody">
+            <h3>回南天</h3>
+            <div class="tags"><i>家庭剧</i><i>已完结</i><i>连续追</i></div>
+            <p class="desc">南方小城一家三口的十年，台词生活化，适合一次连看三集。</p>
+            <div class="meta"><span>全 24 集</span><b>评分 8.9</b></div>
+          </div>
+        </article>
+        <article class="card" data-type="doc" data-searchable="山脊之上 自然纪录片 高清看">
+          <div class="thumb t3"><svg viewBox="0 0 100 60" preserveAspectRatio="none"><path d="M12 46l22-26 18 20 14-14 22 20" stroke="#fff" stroke-width="5" fill="none"/></svg><span>自然纪录</span></div>
+          <div class="cbody">
+            <h3>山脊之上</h3>
+            <div class="tags"><i>自然纪录片</i><i>高清看</i><i>已完结</i></div>
+            <p class="desc">横断山脉四季航拍与科考记录，画面适合大屏，解说克制不煽情。</p>
+            <div class="meta"><span>全 6 集</span><b>评分 9.2</b></div>
+          </div>
+        </article>
+        <article class="card" data-type="series" data-searchable="夜班便利店 都市短剧 碎片看">
+          <div class="thumb t5"><svg viewBox="0 0 100 60" preserveAspectRatio="none"><rect x="14" y="16" width="20" height="30" rx="4" fill="#fff" opacity=".7"/><rect x="44" y="20" width="40" height="5" rx="2.5" fill="#fff"/><rect x="44" y="32" width="28" height="5" rx="2.5" fill="#fff"/></svg><span>都市短剧</span></div>
+          <div class="cbody">
+            <h3>夜班便利店</h3>
+            <div class="tags"><i>都市短剧</i><i>碎片看</i><i>周更</i></div>
+            <p class="desc">每集一个深夜顾客的故事，单集 15 分钟，等车时看一集不费脑。</p>
+            <div class="meta"><span>更新至 14 集</span><b>热度 8.5</b></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 03 最新更新 -->
+    <section class="block" id="latest" data-block>
+      <h2 class="block-title">最新更新：近期上架与追更动态</h2>
+      <p class="block-sub">按上架时间整理，含内容名称与一句摘要，方便判断是否开追。</p>
+      <ul class="upd-list">
+        <li><div class="u-title">晚风知我意 <em>全集上线</em></div><div class="u-desc">32 集一次性放出，都市情感剧，适合周末连续观看。</div></li>
+        <li><div class="u-title">雾港来信 <em>更新 18 集</em></div><div class="u-desc">悬疑短剧本周更新两集，港口旧案线索收束，单集 22 分钟。</div></li>
+        <li><div class="u-title">长街短梦 <em>新片上架</em></div><div class="u-desc">城市剧情片，108 分钟，适合想安静看一部电影时选择。</div></li>
+        <li><div class="u-title">四季餐桌 <em>第二季完结</em></div><div class="u-desc">美食纪录片新增 8 集，按节气排列，配饭观看节奏刚好。</div></li>
+        <li><div class="u-title">慢生活厨房 <em>更新 9 期</em></div><div class="u-desc">慢综艺新一期上线，本期主题是海边早餐，无淘汰环节。</div></li>
+        <li><div class="u-title">山脊之上 <em>全 6 集</em></div><div class="u-desc">自然纪录片完整上线，含航拍与科考两条线索，适合大屏。</div></li>
+        <li><div class="u-title">夜班便利店 <em>更新 14 集</em></div><div class="u-desc">都市短剧新一集讲深夜修表匠，单集 15 分钟，碎片时间可看。</div></li>
+        <li><div class="u-title">纸飞机与夏天 <em>全 12 集</em></div><div class="u-desc">治愈动漫已完结，画风干净，适合亲子一起看。</div></li>
+        <li><div class="u-title">回南天 <em>全 24 集</em></div><div class="u-desc">家庭剧集完整上线，台词生活化，适合连续追。</div></li>
+        <li><div class="u-title">逆风试镜 <em>更新 6 集</em></div><div class="u-desc">竞技综艺新一期进入复赛，赛制改为双人合作舞台。</div></li>
+      </ul>
+    </section>
+
+    <!-- 04 分类入口 -->
+    <section class="block" id="category" data-block>
+      <h2 class="block-title">分类筛选：按类型快速定位想看的内容</h2>
+      <p class="block-sub">点击分类名称可跳转对应筛选结果，也可使用左栏类型标签。</p>
+      <div class="cat-grid">
+        <a class="cat-item" href="/#hot" data-type="series"><b>都市情感剧</b><span>家庭、职场、代际关系</span></a>
+        <a class="cat-item" href="/#hot" data-type="series"><b>悬疑短剧</b><span>单集 15—25 分钟</span></a>
+        <a class="cat-item" href="/#hot" data-type="movie"><b>口碑电影</b><span>剧情、喜剧、类型片</span></a>
+        <a class="cat-item" href="/#hot" data-type="doc"><b>自然纪录片</b><span>地理、生态、科考</span></a>
+        <a class="cat-item" href="/#hot" data-type="doc"><b>美食纪录片</b><span>地方饮食与节气</span></a>
+        <a class="cat-item" href="/#hot" data-type="anime"><b>治愈动漫</b><span>日常、成长、亲子</span></a>
+        <a class="cat-item" href="/#hot" data-type="variety"><b>慢综艺</b><span>生活、旅行、厨房</span></a>
+        <a class="cat-item" href="/#hot" data-type="variety"><b>竞技综艺</b><span>舞台、赛制、复赛</span></a>
+      </div>
+    </section>
+
+    <!-- 05 深度解析 -->
+    <section class="block" id="deep" data-block>
+      <h2 class="block-title">深度解析：免费影视资源怎么挑、怎么看更省时间</h2>
+      <div class="prose">
+        <p>面对一个内容量不小的免费影视资源站，真正耗时的往往不是“有没有得看”，而是“从哪一部开始”。下面从选择逻辑、更新判断、场景匹配三个角度拆开讲，帮助把找片时间压缩到几分钟以内。</p>
+
+        <h3>一、先确定观看场景，再确定类型</h3>
+        <p>同样一部剧，通勤时看和睡前看，体验差别很大。单集 20 分钟左右的悬疑短剧，适合在车站、地铁上分段观看；单集 45 分钟以上的家庭剧，更适合晚上有整块时间时连续追。先定场景，能直接筛掉一半不合适的选项。</p>
+        <ul>
+          <li><b>通勤追：</b>单集 15—25 分钟，剧情钩子密集，错过一句不影响理解。</li>
+          <li><b>睡前看：</b>节奏平缓、冲突不过强，都市情感剧与治愈动漫更合适。</li>
+          <li><b>周末看：</b>电影或已完结剧集，可一次看完整段落，不必等更新。</li>
+          <li><b>下饭看：</b>美食纪录片、慢综艺，信息密度低，随时暂停不影响。</li>
+        </ul>
+
+        <h3>二、更新状态决定要不要现在开追</h3>
+        <p>在91免费观看的片单里，每张卡片都会标注“已完结”“周更”“更新至第几集”。周更剧适合愿意等待、喜欢讨论的观众；已完结剧集则适合想一口气看完、不想被更新节奏打断的人。若某部剧标注“更新至 18 集”，可以先看前几集判断风格，再决定是否追更。</p>
+        <p>一个实用判断是：先看单集时长与总集数，估算总观看时间。全 12 集、单集 24 分钟的剧，总时长约 5 小时，一个周末可以看完；全 40 集、单集 45 分钟的剧，则需要更长时间投入，适合作为长期追更目标。</p>
+
+        <h3>三、用类型标签交叉筛选，缩小范围</h3>
+        <p>左栏的类型标签可以和中栏卡片配合使用。先点“剧集”，再从结果里按“悬疑短剧”“都市情感剧”二次判断；先点“纪录片”，再区分自然、美食、人文方向。交叉筛选比逐条翻页更快，也更容易发现自己平时不常看的类型。</p>
+        <div class="compare">
+          <div class="panel">
+            <h4><b>A</b>按类型找</h4>
+            <p>适合已有明确偏好的人，例如只想看悬疑短剧或自然纪录片，直接点对应分类，结果集中、决策快。</p>
+          </div>
+          <div class="panel alt">
+            <h4><b>B</b>按场景找</h4>
+            <p>适合没有明确偏好、只想“现在看点什么”的人，先定通勤、睡前、下饭等场景，再从匹配内容里挑。</p>
+          </div>
+        </div>
+
+        <h3>四、看前先读一句看点，减少试错</h3>
+        <p>每张卡片下方的看点文字，通常包含节奏、题材和适合人群三类信息。例如“单集 22 分钟，一封信牵出港口旧案”同时给出了时长与剧情钩子；“没有淘汰环节，适合周末当背景音”则直接说明了观看方式。把这句话读完，再决定是否点开，比看片名猜测更可靠。</p>
+        <p>如果连续几部都不合口味，可以回到「最新更新」换一批近期上架内容，或从「相关推荐」里找同类型但角度不同的条目。91免费观看把类型、状态、时长作为固定展示字段，目的就是让这类判断在列表页就能完成，而不必逐个点进去试看。</p>
+      </div>
+    </section>
+
+    <!-- 06 观影指南 -->
+    <section class="block" id="guide" data-block>
+      <h2 class="block-title">观影指南：从找片到追更的四步路径</h2>
+      <p class="block-sub">把常用操作整理成固定路径，减少重复判断。</p>
+      <ol class="steps">
+        <li><b>先看最新更新。</b>确认近期上架了哪些内容，判断有没有符合当下心情的条目。</li>
+        <li><b>用类型标签缩小范围。</b>在左栏选择电影、剧集、综艺、动漫或纪录片，再按具体类型二次筛选。</li>
+        <li><b>读看点与状态字段。</b>重点看单集时长、是否完结、更新至第几集，估算自己的观看时间。</li>
+        <li><b>加入待看并延长线。</b>看完一部后，从「相关推荐」找同类型条目，保持片单不断档。</li>
+      </ol>
+      <p style="margin-top:12px;font-size:13.5px;color:var(--muted)">手机端可将频道导航展开为纵向菜单，左栏类型标签会转为横向排列，方便单手操作；页面内容不依赖脚本，网络较慢时也能正常阅读文字信息。</p>
+    </section>
+
+    <!-- 07 FAQ -->
+    <section class="block" id="faq" data-block>
+      <h2 class="block-title">常见问答：关于免费影视资源与观看选择</h2>
+      <p class="block-sub">围绕类型选择、更新节奏、观看场景整理的 6 个问题。</p>
+
+      <details class="faq-item" open>
+        <summary>都市情感剧适合什么人看？</summary>
+        <div class="ans">适合喜欢生活化台词、关注家庭与代际关系的观众。这类剧冲突不算激烈，节奏偏平缓，适合睡前或周末连续观看。如果偏好强情节、快节奏，可以优先看悬疑短剧分类。</div>
+      </details>
+      <details class="faq-item">
+        <summary>悬疑短剧一般多久更新一次？</summary>
+        <div class="ans">站内多数悬疑短剧为周更，每周更新 2—3 集，单集 15—25 分钟。卡片上会标注“更新至第几集”，追更前可以先看这个字段，再决定是否现在开追。</div>
+      </details>
+      <details class="faq-item">
+        <summary>已完结剧集和连载剧集怎么选？</summary>
+        <div class="ans">想一口气看完、不愿被更新打断，选已完结剧集；喜欢边看边讨论、愿意等待，选连载剧集。已完结内容的总时长可以直接按集数乘单集时长估算。</div>
+      </details>
+      <details class="faq-item">
+        <summary>通勤时间短，看什么类型比较合适？</summary>
+        <div class="ans">优先选单集 15—25 分钟的短剧或单元剧，剧情钩子密集、单集独立性强。都市短剧、悬疑短剧都属于这一类，错过一集也能接上。</div>
+      </details>
+      <details class="faq-item">
+        <summary>纪录片适合下饭看吗？</summary>
+        <div class="ans">美食纪录片和部分人文纪录片适合下饭看，信息密度适中、画面舒适、解说克制。自然纪录片画面信息较多，更适合大屏专注观看。</div>
+      </details>
+      <details class="faq-item">
+        <summary>免费影视资源和付费平台内容有什么区别？</summary>
+        <div class="ans">免费资源站以类型整理和片单推荐为主，更新节奏与片库规模因站而异；付费平台通常在更新速度、清晰度和独占内容上更稳定。选择时可先看类型覆盖是否符合自己的偏好。</div>
+      </details>
+    </section>
+
+    <!-- 08 观众评论 -->
+    <section class="block" id="comments" data-block>
+      <h2 class="block-title">观众评论：来自片单使用者的真实语气反馈</h2>
+      <p class="block-sub">以下为示例评论，昵称与内容仅用于展示页面结构。</p>
+      <div class="cmt-list">
+        <div class="cmt"><div class="who"><span class="av">林</span><b>林间慢跑</b><time>06-18</time></div><p>按场景找片这个思路挺实用，通勤那栏点进去基本都是 20 分钟左右的剧。</p></div>
+        <div class="cmt"><div class="who"><span class="av">陈</span><b>陈小满</b><time>06-17</time></div><p>《晚风知我意》看完了，节奏确实慢，但台词写得生活化，适合睡前看。</p></div>
+        <div class="cmt"><div class="who"><span class="av">周</span><b>周末放映员</b><time>06-17</time></div><p>希望纪录片分类再细一点，自然和美食混在一起有时候要翻一会儿。</p></div>
+        <div class="cmt"><div class="who"><span class="av">吴</span><b>吴桐</b><time>06-16</time></div><p>悬疑短剧更新状态标得清楚，追更前能直接看到第几集，省得点进去确认。</p></div>
+        <div class="cmt"><div class="who"><span class="av">许</span><b>许一川</b><time>06-16</time></div><p>《长街短梦》画面一般，但故事挺稳，周末晚上看一部刚好。</p></div>
+        <div class="cmt"><div class="who"><span class="av">何</span><b>何小满</b><time>06-15</time></div><p>类型标签筛选在手机上也好用，横向排列点起来不费劲。</p></div>
+        <div class="cmt"><div class="who"><span class="av">赵</span><b>赵四喜</b><time>06-15</time></div><p>美食纪录片那栏配饭看很合适，单集 30 分钟，吃完正好一集。</p></div>
+        <div class="cmt"><div class="who"><span class="av">孙</span><b>孙不二</b><time>06-14</time></div><p>竞技综艺更新有点慢，一周一期等得着急，不过赛制改版后好看多了。</p></div>
+        <div class="cmt"><div class="who"><span class="av">郑</span><b>郑南风</b><time>06-14</time></div><p>《山脊之上》航拍镜头很稳，适合投屏看，解说没有过度煽情。</p></div>
+        <div class="cmt"><div class="who"><span class="av">钱</span><b>钱多多</b><time>06-13</time></div><p>希望增加“已完结”单独筛选，现在只能从卡片上看，翻起来还是慢一点。</p></div>
+        <div class="cmt"><div class="who"><span class="av">冯</span><b>冯小满</b><time>06-13</time></div><p>治愈动漫那部《纸飞机与夏天》和孩子一起看的，画风干净，没有复杂情节。</p></div>
+        <div class="cmt"><div class="who"><span class="av">蒋</span><b>蒋一鸣</b><time>06-12</time></div><p>相关推荐比热门榜更有用，看完一部能顺着找到同类型的下一部。</p></div>
+        <div class="cmt"><div class="who"><span class="av">沈</span><b>沈迟</b><time>06-12</time></div><p>整体信息排得比较密，但找片确实比在搜索框里盲搜快。</p></div>
+        <div class="cmt"><div class="who"><span class="av">韩</span><b>韩梅</b><time>06-11</time></div><p>《回南天》台词很生活化，一家人吃饭那几场戏拍得自然。</p></div>
+      </div>
+    </section>
+
+    <!-- 09 影视资讯 -->
+    <section class="block" id="news" data-block>
+      <h2 class="block-title">影视资讯：类型动向与片单变化</h2>
+      <p class="block-sub">围绕短剧、纪录片与类型片整理的近期观察。</p>
+      <div class="news-list">
+        <div class="news"><h4>悬疑短剧单集时长继续压缩，20 分钟成主流</h4><div class="nd">06-18</div><p>多部新上架悬疑短剧把单集控制在 18—22 分钟，更适合通勤分段观看。</p></div>
+        <div class="news"><h4>都市情感剧回归生活流，家庭场景占比上升</h4><div class="nd">06-17</div><p>近期上线的都市情感剧更强调日常对话与家庭关系，强冲突情节有所减少。</p></div>
+        <div class="news"><h4>美食纪录片按节气编排，单集 30 分钟成常见配置</h4><div class="nd">06-16</div><p>以二十四节气为线索的美食纪录片增多，配饭观看的场景被更明确地考虑进剪辑节奏。</p></div>
+        <div class="news"><h4>慢综艺减少淘汰赛制，转向生活记录</h4><div class="nd">06-15</div><p>部分慢综艺取消淘汰环节，改为固定嘉宾的日常记录，观看门槛进一步降低。</p></div>
+        <div class="news"><h4>自然纪录片航拍比例提高，大屏观看需求增加</h4><div class="nd">06-14</div><p>新上线的自然纪录片增加航拍与延时镜头，画面信息密度提高，适合投屏观看。</p></div>
+        <div class="news"><h4>治愈动漫题材向亲子共看靠拢</h4><div class="nd">06-13</div><p>近期完结的治愈动漫在情节复杂度上做减法，更强调画面与日常氛围。</p></div>
+      </div>
+    </section>
+
+    <!-- 10 相关推荐 -->
+    <section class="block" id="related" data-block>
+      <h2 class="block-title">相关推荐：同类型与相邻方向的可搜条目</h2>
+      <p class="block-sub">按内容方向整理，标签文字对应具体类型词，便于继续查找。</p>
+      <div class="rel-grid">
+        <a class="rel" href="/#hot"><span class="rk">01</span><span class="rt">都市情感剧 · 代际关系<span>家庭场景、生活流台词</span></span></a>
+        <a class="rel" href="/#hot"><span class="rk">02</span><span class="rt">悬疑短剧 · 港口旧案<span>单集 22 分钟、周更</span></span></a>
+        <a class="rel" href="/#hot"><span class="rk">03</span><span class="rt">城市剧情片 · 固定机位<span>108 分钟、口碑向</span></span></a>
+        <a class="rel" href="/#hot"><span class="rk">04</span><span class="rt">美食纪录片 · 节气饮食<span>单集 30 分钟、下饭看</span></span></a>
+        <a class="rel" href="/#hot"><span class="rk">05</span><span class="rt">自然纪录片 · 横断山脉<span>航拍、科考记录</span></span></a>
+        <a class="rel" href="/#hot"><span class="rk">06</span><span class="rt">治愈动漫 · 暑假日常<span>亲子共看、画风干净</span></span></a>
+        <a class="rel" href="/#hot"><span class="rk">07</span><span class="rt">慢综艺 · 厨房生活<span>无淘汰、周末背景音</span></span></a>
+        <a class="rel" href="/#hot"><span class="rk">08</span><span class="rt">竞技综艺 · 复赛舞台<span>双人合作、赛制改版</span></span></a>
+      </div>
+    </section>
+
+    <!-- 11 更新节奏时间线 -->
+    <section class="block" id="timeline" data-block>
+      <h2 class="block-title">更新节奏：一周内的片单变化时间线</h2>
+      <p class="block-sub">以周为单位观察上架、更新与完结的分布。</p>
+      <ul class="timeline">
+        <li><b>周一：</b>悬疑短剧集中更新，通常放出 2 集，适合通勤分段看。</li>
+        <li><b>周三：</b>慢综艺新一期上线，节奏轻松，适合下班后当背景音。</li>
+        <li><b>周五：</b>都市情感剧与家庭剧更新，周末前可以攒两集连看。</li>
+        <li><b>周六：</b>电影与纪录片新片上架高峰，适合安排整块时间观看。</li>
+        <li><b>周日：</b>治愈动漫与亲子向内容更新，适合家庭一起看。</li>
+        <li><b>月末：</b>已完结剧集集中补齐，适合一次性补完整个类型片单。</li>
+      </ul>
+    </section>
+
+    <!-- 12 选片对照 -->
+    <section class="block" id="choice" data-block>
+      <h2 class="block-title">选片对照：短剧、长剧与电影怎么取舍</h2>
+      <p class="block-sub">从时间投入、观看方式与情节密度三个维度对比。</p>
+      <div class="compare">
+        <div class="panel">
+          <h4><b>短</b>悬疑短剧 / 都市短剧</h4>
+          <p>单集 15—25 分钟，总集数多在 12—24 集。适合通勤、碎片时间，情节钩子密集，单集独立性强，错过一集影响不大。</p>
+        </div>
+        <div class="panel alt">
+          <h4><b>长</b>家庭剧 / 都市情感剧</h4>
+          <p>单集 40—45 分钟，总集数 24—40 集。适合睡前或周末连续追，人物关系铺陈更充分，需要较稳定的观看时间。</p>
+        </div>
+      </div>
+      <div class="compare">
+        <div class="panel">
+          <h4><b>影</b>口碑电影</h4>
+          <p>单部 90—120 分钟，一次看完一个完整故事。适合周末晚上安排整块时间，不必等待更新，也不容易中途打断。</p>
+        </div>
+        <div class="panel alt">
+          <h4><b>纪</b>纪录片 / 慢综艺</h4>
+          <p>单集 25—50 分钟，信息密度适中，可随时暂停。适合下饭、做家务时观看，对连续剧情没有依赖。</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 右栏 -->
+  <aside class="col-right" aria-label="辅助阅读">
+    <div class="side-card">
+      <div class="side-title">本页目录</div>
+      <ul class="toc">
+        <li><a href="/#intro">平台介绍</a></li>
+        <li><a href="/#hot">热门片单</a></li>
+        <li><a href="/#latest">最新更新</a></li>
+        <li><a href="/#category">分类筛选</a></li>
+        <li><a href="/#deep">深度解析</a></li>
+        <li><a href="/#guide">观影指南</a></li>
+        <li><a href="/#faq">常见问答</a></li>
+        <li><a href="/#comments">观众评论</a></li>
+        <li><a href="/#news">影视资讯</a></li>
+        <li><a href="/#related">相关推荐</a></li>
+        <li><a href="/#timeline">更新节奏</a></li>
+        <li><a href="/#choice">选片对照</a></li>
+      </ul>
+    </div>
+    <div class="side-card">
+      <div class="side-title">热门条目</div>
+      <ul class="hot-list">
+        <li><a href="/#hot">晚风知我意<small>都市情感剧 · 全 32 集</small></a></li>
+        <li><a href="/#hot">雾港来信<small>悬疑短剧 · 更新至 18 集</small></a></li>
+        <li><a href="/#hot">山脊之上<small>自然纪录片 · 全 6 集</small></a></li>
+        <li><a href="/#hot">四季餐桌<small>美食纪录片 · 全 8 集</small></a></li>
+        <li><a href="/#hot">长街短梦<small>城市剧情片 · 108 分钟</small></a></li>
+        <li><a href="/#hot">夜班便利店<small>都市短剧 · 更新至 14 集</small></a></li>
+      </ul>
+    </div>
+    <div class="side-card">
+      <div class="side-title">延伸阅读</div>
+      <ul class="ext-list">
+        <li><a href="/#deep">通勤追剧怎么选单集时长</a><br><span>深度解析 · 场景匹配</span></li>
+        <li><a href="/#faq">已完结与连载剧集的选择差异</a><br><span>常见问答 · 更新状态</span></li>
+        <li><a href="/#choice">短剧、长剧与电影的时间投入对比</a><br><span>选片对照 · 观看方式</span></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<!-- ===== 页尾 ===== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="f-brand">
+          <span class="logo" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="12" width="56" height="34" rx="6" stroke="#ff8a63" stroke-width="4"/>
+              <path d="M26 22l14 7-14 7V22z" fill="#ff6a3d"/>
+              <rect x="20" y="52" width="24" height="4" rx="2" fill="#ff8a63"/>
+            </svg>
+          </span>
+          <b>91免费观看</b>
+        </div>
+        <p>以免费影视资源为核心，按类型、更新状态与观看场景整理片单，帮助访问者更快判断一部内容是否适合现在观看。</p>
+        <p class="notice-line">部分内容为示例数据，仅用于展示页面结构。</p>
+      </div>
+      <div>
+        <h4>类型频道</h4>
+        <ul>
+          <li><a href="/#hot">都市情感剧</a></li>
+          <li><a href="/#hot">悬疑短剧</a></li>
+          <li><a href="/#hot">口碑电影</a></li>
+          <li><a href="/#hot">自然纪录片</a></li>
+          <li><a href="/#hot">美食纪录片</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>观看场景</h4>
+        <ul>
+          <li><a href="/#guide">通勤追剧</a></li>
+          <li><a href="/#guide">睡前看</a></li>
+          <li><a href="/#guide">周末看</a></li>
+          <li><a href="/#guide">下饭看</a></li>
+          <li><a href="/#guide">亲子共看</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>使用入口</h4>
+        <ul>
+          <li><a href="/#latest">最新更新</a></li>
+          <li><a href="/#category">分类筛选</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#related">相关推荐</a></li>
+          <li><a href="/#timeline">更新节奏</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbottom">
+      <span>© 2025 91免费观看 · 内容整理示例页</span>
+      <span>页面内容仅用于展示影视类型整理与观看场景匹配的结构</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 菜单切换 */
+  var menuToggle=document.getElementById('menuToggle');
+  var headNav=document.getElementById('headNav');
+  if(menuToggle && headNav){
+    menuToggle.addEventListener('click',function(){
+      var open=headNav.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded',open?'true':'false');
+    });
+    headNav.addEventListener('click',function(e){
+      if(e.target.tagName==='A'){
+        headNav.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* 类型筛选 */
+  var typeCloud=document.getElementById('typeCloud');
+  var cards=Array.prototype.slice.call(document.querySelectorAll('#hotGrid .card'));
+  var catItems=Array.prototype.slice.call(document.querySelectorAll('.cat-item'));
+  var activeType='all';
+
+  function applyFilter(type){
+    activeType=type;
+    if(typeCloud){
+      Array.prototype.forEach.call(typeCloud.querySelectorAll('button'),function(b){
+        b.classList.toggle('on',b.getAttribute('data-type')===type);
+      });
+    }
+    cards.forEach(function(c){
+      var t=c.getAttribute('data-type');
+      var show=(type==='all')||(t===type);
+      c.style.display=show?'':'none';
+    });
+    catItems.forEach(function(a){
+      var t=a.getAttribute('data-type');
+      a.style.opacity=(type==='all'||t===type)?'1':'0.55';
+    });
+  }
+
+  if(typeCloud){
+    typeCloud.addEventListener('click',function(e){
+      var btn=e.target.closest('button');
+      if(!btn)return;
+      applyFilter(btn.getAttribute('data-type')||'all');
+      var hot=document.getElementById('hot');
+      if(hot)hot.scrollIntoView({behavior:'smooth',block:'start'});
+    });
+  }
+
+  catItems.forEach(function(a){
+    a.addEventListener('click',function(e){
+      var t=a.getAttribute('data-type');
+      if(t){
+        e.preventDefault();
+        applyFilter(t);
+        var hot=document.getElementById('hot');
+        if(hot)hot.scrollIntoView({behavior:'smooth',block:'start'});
+      }
+    });
+  });
+
+  /* 站内搜索 */
+  var input=document.getElementById('siteSearch');
+  var btn=document.getElementById('searchBtn');
+  var feedback=document.getElementById('searchFeedback');
+  var searchable=Array.prototype.slice.call(document.querySelectorAll('[data-searchable]'));
+  var allTextNodes=Array.prototype.slice.call(document.querySelectorAll('.block, .card, .upd-list li, .rel'));
+
+  function clearSearch(){
+    searchable.forEach(function(el){el.classList.remove('dim');});
+    allTextNodes.forEach(function(el){el.style.display='';});
+    if(feedback){feedback.classList.remove('show');feedback.textContent='';}
+  }
+
+  function runSearch(){
+    var q=(input&&input.value||'').trim();
+    if(!q){clearSearch();return;}
+    var kw=q.toLowerCase();
+    var hits=0;
+    searchable.forEach(function(el){
+      var text=(el.getAttribute('data-searchable')+' '+el.textContent).toLowerCase();
+      if(text.indexOf(kw)>-1){el.classList.remove('dim');hits++;}
+      else{el.classList.add('dim');}
+    });
+    if(feedback){
+      feedback.classList.add('show');
+      if(hits===0){
+        feedback.textContent='没有找到包含“'+q+'”的内容，试试“悬疑短剧”“美食纪录片”或“通勤追”。';
+      }else{
+        feedback.textContent='找到 '+hits+' 条相关内容，已在热门片单中高亮显示。';
+      }
+    }
+    var hot=document.getElementById('hot');
+    if(hot)hot.scrollIntoView({behavior:'smooth',block:'start'});
+  }
+
+  if(btn){btn.addEventListener('click',runSearch);}
+  if(input){
+    input.addEventListener('keydown',function(e){
+      if(e.key==='Enter'){e.preventDefault();runSearch();}
+    });
+    input.addEventListener('input',function(){
+      if(!input.value.trim()){clearSearch();}
+    });
+  }
+
+  /* 页头频道高亮 */
+  var navLinks=Array.prototype.slice.call(document.querySelectorAll('.head-nav a'));
+  var sections=Array.prototype.slice.call(document.querySelectorAll('main section[id]'));
+  if('IntersectionObserver' in window && sections.length){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          var id=en.target.id;
+          navLinks.forEach(function(a){
+            a.classList.toggle('on',a.getAttribute('href')==='/'+'#'+id);
+          });
+        }
+      });
+    },{rootMargin:'-40% 0px -55% 0px',threshold:0});
+    sections.forEach(function(s){io.observe(s);});
+  }
+})();
+</script>
+</body>
+                                                                                       </html>
